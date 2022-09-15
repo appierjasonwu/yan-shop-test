@@ -1,47 +1,32 @@
 <template>
-  <div style="text-align:center">
-    Welcome to yanshop
-  </div>
   <div class="hello">
-    <div class="menu">
-      <div class = "menu-item">
-        <h1>Home</h1>
-      </div>
-      <div class = "menu-item">
-        <h1>Login</h1>
-      </div>
-      <div class = "menu-item">
-        <h1>Cart</h1>
-      </div>
-    </div>
-    <br>
-    <div class="menu">
-      <div class = "menu-item">
-        <h1>Clothes</h1>
-      </div>
-      <div class = "menu-item">
-        <h1>Pants</h1>
-      </div>
-    </div>
-    
-    <div class = "name">
-      <div class = "pants">
-        <div>1.Brown pants</div>
-        <img  src = "../assets/img/Brownpants.jpg" height="250" width="250" style ="margin-right: 100px;">
-        <div>price:500</div>
-      </div>
-      <div class = "pants">
-        <div>2.Green pants</div>
-        <img  src = "../assets/img/Greenpants.jpg" height="250" width="250" style ="margin-right: 100px;">
-        <div>price:1300</div>
-      </div>
-      <div class = "pants">
-        <div>3.Gray pants</div>
-        <img  src = "../assets/img/Graypants.jpg" height="250" width="250" >
-        <div>price:1000</div>
-      </div>
-
-    </div>
+    <h1>{{ msg }}</h1>
+    <p>
+      For a guide and recipes on how to configure / customize this project,<br>
+      check out the
+      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
+    </p>
+    <h3>Installed CLI Plugins</h3>
+    <ul>
+      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
+      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
+    </ul>
+    <h3>Essential Links</h3>
+    <ul>
+      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
+      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
+      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
+      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
+      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
+    </ul>
+    <h3>Ecosystem</h3>
+    <ul>
+      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
+      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
+      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
+      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
+    </ul>
   </div>
 </template>
 
@@ -56,25 +41,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.name{
-  display:flex;
-  align-items: center;
-  vertical-align: middle;
-  width: 100vw;
-  height:100vh;
+h3 {
+  margin: 40px 0 0;
 }
-.letter{
-  margin:10;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+li {
+  display: inline-block;
+  margin: 0 10px;
 }
-.menu-item{
-  flex:1;
-  border:3px solid rgb(47, 167, 231);
-  text-align: center;
-  font-size: 20px;
+a {
+  color: #42b983;
 }
 </style>
